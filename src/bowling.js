@@ -45,11 +45,11 @@ BowlingGame.prototype.calculateScore = function (){
   }
 
   function spareScore() {
-    return game.frames[rollIndex] + game.frames[rollIndex + 1] + game.frames[rollIndex + 2];
+    return (10 + game.frames[rollIndex + 2]);
   }
 
   function strikeScore() {
-    return game.frames[rollIndex] + game.frames[rollIndex + 1] + game.frames[rollIndex + 2];
+    return (10 + game.frames[rollIndex + 1] + game.frames[rollIndex + 2]);
   }
 
   function normalScore() {
